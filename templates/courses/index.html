@@ -18,6 +18,7 @@
 
   <main>
     <h3>All Courses</h3>
+    <div class="category">
     {{#courses}}
       <div class="course">
         <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
@@ -28,7 +29,9 @@
         </div>
       </div>
     {{/courses}}
+    </div>
     <h3>More Courses</h3>
+    <div class="category">
     {{#courses}}
       <div class="course">
         <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
@@ -39,7 +42,9 @@
         </div>
       </div>
     {{/courses}}
+    </div>
     <h3>Even More Courses</h3>
+    <div class="category">
     {{#courses}}
       <div class="course">
         <div class="imgholder">
@@ -52,6 +57,7 @@
         </div>
       </div>
     {{/courses}}
+    </div>
   </main>
 </body>
 </html>

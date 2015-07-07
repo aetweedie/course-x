@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>{{name}}</title>
+  <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
   <header>
@@ -14,14 +15,14 @@
     </nav>
   </header>
   <main>
-    <section class='display'>
       <h3>{{name}}</h3>
+    <section class='display'>
       <img src="{{image}}" alt="{{name}} image">
-      <p class='category'>{{category}}</p>
+      <p class='category'><strong>Category: </strong>{{category}}</p>
       <p class='description'>{{description}}</p>
       <p class='rating'><strong>Rating: </strong>{{rating}}</p>
       <a href="{{url}}" target="_blank">Visit This Course!</a>
-      <a href="{{_id}}/edit">Admin? Edit this course!</a>
+      <a href="{{_id}}/edit">Admin</a>
     </section>
   </main>
 </body>

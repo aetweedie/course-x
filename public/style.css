@@ -11,18 +11,26 @@ body {
 header {
   background-color: darkorange;
   color: white;
-  padding: 20px 50px; }
+  padding: 20px 150px; }
+
+.display {
+  padding: 20px 150px;
+  width: 80%;
+  position: relative;
+  margin: 0 auto; }
+
+.container {
+  margin-top: 20px;
+  margin-left: 40%; }
 
 .thumb {
-  height: 150px; }
+  height: 150px;
+  max-width: 200px; }
 
 h3 {
   background-color: #5e91c2;
-  padding: 10px 50px;
+  padding: 10px 150px;
   margin: 0px; }
-
-.imgholder img {
-  width: inherit; }
 
 h4, h5 {
   margin: 0px;
@@ -30,11 +38,15 @@ h4, h5 {
   position: relative;
   padding: 0px; }
 
+.category {
+  overflow: scroll; }
+
 .course {
   display: inline-block;
   margin: 10px;
   width: 200px;
   background-color: #bbcedf;
-  text-align: center; }
+  text-align: center;
+  height: auto; }
   .course .info {
     padding: 10px; }

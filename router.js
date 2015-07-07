@@ -45,6 +45,7 @@ routes.addRoute ('/courses/:id', function (req, res, url) {
     courses.findOne({_id: url}, function (err, docs) {
       var file = fs.readFileSync('templates/courses/show.html');
       var template = view.render(file.toString(), {
+        _id: docs._id,
         name: docs.name,
         author: docs.author,
         description: docs.description,
@@ -59,6 +60,8 @@ routes.addRoute ('/courses/:id', function (req, res, url) {
 });
 
 routes.addRoute('/courses/:id/edit', function (req, res, url) {
+  console.log(req.url)
+  console.log(req.method)
   if (req.method === 'GET') {
     courses.findOne({ _id: url.params.id }, function(err, doc) {
       if (err) console.log(err);
