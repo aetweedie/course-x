@@ -21,9 +21,35 @@
     {{#courses}}
       <div class="course">
         <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
-        <h4>{{name}}</h4>
-        <h5>{{author}}</h5>
-        <h5>Rating: {{rating}}/5</h5>
+        <div class='info'>
+          <h4>{{name}}</h4>
+          <h5>{{author}}</h5>
+          <h5>Rating: {{rating}}/5</h5>
+        </div>
+      </div>
+    {{/courses}}
+    <h3>More Courses</h3>
+    {{#courses}}
+      <div class="course">
+        <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
+        <div class='info'>
+          <h4>{{name}}</h4>
+          <h5>{{author}}</h5>
+          <h5>Rating: {{rating}}/5</h5>
+        </div>
+      </div>
+    {{/courses}}
+    <h3>Even More Courses</h3>
+    {{#courses}}
+      <div class="course">
+        <div class="imgholder">
+          <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
+        </div>
+        <div class='info'>
+          <h4>{{name}}</h4>
+          <h5>{{author}}</h5>
+          <h5>Rating: {{rating}}/5</h5>
+        </div>
       </div>
     {{/courses}}
   </main>

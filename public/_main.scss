@@ -1,5 +1,21 @@
+main {
+  
+}
+
 .thumb {
   height: 150px;
+}
+
+h3 {
+  background-color: $blue;
+  padding: 10px 50px;
+  margin: 0px;
+}
+
+.imgholder {
+  img {
+    width: inherit;
+  }
 }
 
 h4, h5 {
@@ -12,6 +28,11 @@ h4, h5 {
 .course {
   display: inline-block;
   margin: 10px;
-  background-color: gray;
+  width: 200px;
+  background-color: $gray;
   text-align: center;
+
+    .info {
+      padding: 10px;
+    }
 }
