@@ -47,6 +47,9 @@
             <textarea name="description" value='{{description}}' rows="8" cols="40"></textarea><br>
             <input type="submit" value='Submit your edits'>
         </form>
+          <form class="destroy" action="/courses/{{_id}}/delete" method="post">
+            <input type="submit" value="Delete This course">
+          </form>
       </div>
     </main>
 </body>
