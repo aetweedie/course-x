@@ -8,12 +8,12 @@
 </head>
 <body>
   <header>
-    <h1>Course-X</h1>
-    <h2>The Home of Online Learning</h2>
     <nav>
       <a href="/courses">Home</a>
       <a href="/courses/new">Post Your Course!</a>
     </nav>
+    <h1>Course-X</h1>
+    <h2>The Home of Online Learning</h2>
   </header>
 
   <main>
@@ -35,7 +35,7 @@
     <h3>Gardening Courses</h3>
     <div class="container">
       <div class="category">
-      {{#courses}}{{category = 'gardening'}}
+      {{#courses}}
         <div class="course">
           <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
           <div class='info'>
@@ -44,24 +44,26 @@
             <h5>Rating: {{rating}}/5</h5>
           </div>
         </div>
-      {{category = 'gardening'}}{{/courses}}
+      {{/courses}}
       </div>
 
     </div>
     <h3>Even More Courses</h3>
-    <div class="category">
-    {{#courses}}
-      <div class="course">
-        <div class="imgholder">
-          <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
+    <div class="container">
+      <div class="category">
+      {{#courses}}
+        <div class="course">
+          <div class="imgholder">
+            <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
+          </div>
+          <div class='info'>
+            <h4>{{name}}</h4>
+            <h5>{{author}}</h5>
+            <h5>Rating: {{rating}}/5</h5>
+          </div>
         </div>
-        <div class='info'>
-          <h4>{{name}}</h4>
-          <h5>{{author}}</h5>
-          <h5>Rating: {{rating}}/5</h5>
-        </div>
+      {{/courses}}
       </div>
-    {{/courses}}
     </div>
   </main>
 </body>

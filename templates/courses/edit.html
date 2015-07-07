@@ -7,16 +7,17 @@
 </head>
 <body>
     <header>
-      <h1>Course-X</h1>
-      <h2>The Home of Online Learning</h2>
       <nav>
         <a href="/courses">Home</a>
+        <a href="/courses/new">Post Your Course!</a>
       </nav>
+      <h1>Course-X</h1>
+      <h2>The Home of Online Learning</h2>
     </header>
     <main>
         <h3>Edit a Course!</h3>
       <div class="container">
-        <form action="/course-x/index.html" method='POST'>
+        <form action="/courses/index.html" method='POST'>
           <label for="name">Name</label>
             <input type="text" value="{{name}}" name='name'><br>
           <label for="author">Author</label>

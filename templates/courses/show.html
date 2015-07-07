@@ -7,20 +7,20 @@
 </head>
 <body>
   <header>
-    <h1>Course-X</h1>
-    <h2>The Home of Online Learning</h2>
     <nav>
       <a href="/courses">Home</a>
       <a href="/courses/new">Post Your Course!</a>
     </nav>
+    <h1>Course-X</h1>
+    <h2>The Home of Online Learning</h2>
   </header>
   <main>
       <h3>{{name}}</h3>
     <section class='display'>
       <img src="{{image}}" alt="{{name}} image">
-      <p class='category'><strong>Category: </strong>{{category}}</p>
+      <p class='cat'><strong>Category: </strong>{{category}}</p>
       <p class='description'>{{description}}</p>
-      <p class='rating'><strong>Rating: </strong>{{rating}}</p>
+      <p class='rating'><strong>Rating: </strong>{{rating}}/5</p>
       <a href="{{url}}" target="_blank">Visit This Course!</a>
       <a href="{{_id}}/edit">Admin</a>
     </section>

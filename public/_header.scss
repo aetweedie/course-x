@@ -1,5 +1,31 @@
 header {
   background-color: $orange;
   color: white;
-  padding: 20px 150px;
+  padding: 10px 150px;
+
+  h1 {
+    margin: 0px;
+    font-size: 70px;
+    font-family: 'Exo 2', sans-serif;
+    font-style: italic;
+  }
+  h2 {
+    margin: 0px;
+    margin-left: 10px;
+  }
+  nav {
+    float:right;
+    background: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+
+    a {
+      display: block;
+      margin: 5px;
+      text-decoration: none;
+      color: $blue;
+      font-weight: bolder;
+    }
+  }
 }
