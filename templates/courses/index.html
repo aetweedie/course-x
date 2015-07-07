@@ -5,11 +5,21 @@
   <title>Course-X</title>
 </head>
 <body>
-  <h1>Course-X</h1>
-  <h2>The Home of Online Learning</h2>
+  <header>
+    <h1>Course-X</h1>
+    <h2>The Home of Online Learning</h2>
+  </header>
 
-  {{#courses}}
-  
-  {{/courses}}
+  <main>
+    <h3>All Courses</h3>
+    {{#courses}}
+      <div class="course">
+        <img src="{{image}}" alt="{{name}}">
+        <h4>{{name}}</h4>
+        <h5>{{author}}</h5>
+        <h5>Rating: {{rating}}/5</h5>
+      </div>
+    {{/courses}}
+  </main>
 </body>
 </html>
