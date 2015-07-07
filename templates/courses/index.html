@@ -18,30 +18,35 @@
 
   <main>
     <h3>All Courses</h3>
-    <div class="category">
-    {{#courses}}
-      <div class="course">
-        <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
-        <div class='info'>
-          <h4>{{name}}</h4>
-          <h5>{{author}}</h5>
-          <h5>Rating: {{rating}}/5</h5>
+    <div class="container">
+      <div class="category">
+      {{#courses}}
+        <div class="course">
+          <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
+          <div class='info'>
+            <h4>{{name}}</h4>
+            <h5>{{author}}</h5>
+            <h5>Rating: {{rating}}/5</h5>
+          </div>
         </div>
+      {{/courses}}
       </div>
-    {{/courses}}
     </div>
-    <h3>More Courses</h3>
-    <div class="category">
-    {{#courses}}
-      <div class="course">
-        <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
-        <div class='info'>
-          <h4>{{name}}</h4>
-          <h5>{{author}}</h5>
-          <h5>Rating: {{rating}}/5</h5>
+    <h3>Gardening Courses</h3>
+    <div class="container">
+      <div class="category">
+      {{#courses}}{{category = 'gardening'}}
+        <div class="course">
+          <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
+          <div class='info'>
+            <h4>{{name}}</h4>
+            <h5>{{author}}</h5>
+            <h5>Rating: {{rating}}/5</h5>
+          </div>
         </div>
+      {{category = 'gardening'}}{{/courses}}
       </div>
-    {{/courses}}
+
     </div>
     <h3>Even More Courses</h3>
     <div class="category">
