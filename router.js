@@ -64,7 +64,7 @@ routes.addRoute('/courses/:id/edit', function (req, res, url) {
   console.log(req.method)
   if (req.method === 'GET') {
     courses.findOne({ _id: url.params.id }, function(err, doc) {
-      if (err) console.log(err);
+      if (err) res.end('error loading docs')
       var file = fs.readFileSync('templates/courses/edit.html');
       var template = view.render(file.toString(), doc);
       res.end(template);

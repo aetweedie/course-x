@@ -17,7 +17,7 @@
     <main>
         <h3>Edit a Course!</h3>
       <div class="container">
-        <form action="/courses/index.html" method='POST'>
+        <form action="/courses/{{_id}}/update" method='POST'>
           <label for="name">Name</label>
             <input type="text" value="{{name}}" name='name'><br>
           <label for="author">Author</label>
@@ -44,8 +44,8 @@
               <option value="5">5</option>
             </select><br>
           <label for="description">Description</label><br>
-            <textarea name="description" value='{{description}}' rows="8" cols="40"></textarea><br>
-            <input type="submit" value='Submit your edits'>
+            <textarea name="description" rows="8" cols="40">{{description}}</textarea><br>
+          <input type="submit" value='Submit your edits'>
         </form>
           <form class="destroy" action="/courses/{{_id}}/delete" method="post">
             <input type="submit" value="Delete This course">
