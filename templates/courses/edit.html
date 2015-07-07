@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit</title>
+</head>
+<body>
+    <header>
+      <h1>Course-X</h1>
+      <h2>The Home of Online Learning</h2>
+      <nav>
+        <a href="/courses">Home</a>
+      </nav>
+    </header>
+    <main>
+      <h3>Edit a Course!</h3>
+      <form action="/course-x/index.html" method='POST'>
+        <label for="name">{{name}}</label>
+          <input type="text" name='name'><br>
+        <label for="author">{{author}}</label>
+          <input type="text"  name='author'><br>
+        <label for="category">{{category}}</label>
+          <select name='category'>
+            <option value="finance">Finance</option>
+            <option value="programming">Programming</option>
+            <option value="graphicdesign">Graphic Design</option>
+            <option value="selfhelp">Self Help</option>
+            <option value="education">Education</option>
+          </select><br>
+        <label for="image">{{image}}</label>
+          <input type="text" name='image'><br>
+        <label for="url">{{url}}</label>
+          <input type="text" name='url'><br>
+        <label for="rating">{{rating}}</label>
+          <select name='rating'>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select><br>
+        <label for="description">{{description}}</label><br>
+          <textarea name="description" rows="8" cols="40"></textarea><br>
+          <input type="submit" value='Submit your edits'>
+      </form>
+    </main>
+</body>
+</html>
