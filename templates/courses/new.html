@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit {{name}}</title>
+</head>
+<body>
+  <header>
+    <h1>Course-X</h1>
+    <h2>The Home of Online Learning</h2>
+    <nav>
+      <a href="/courses">Home</a>
+      <a href="/courses/new">Post Your Course!</a>
+    </nav>
+  </header>
+  <main>
+    <h3>Add Your Course!</h3>
+    <form action="/course-x/index.html" method='POST'>
+      <label for="name">Name</label>
+        <input type="text" name='name'><br>
+      <label for="author">Author</label>
+        <input type="text"  name='author'><br>
+      <label for="category">Category</label>
+        <select name='category'>
+          <option value="finance">Finance</option>
+          <option value="programming">Programming</option>
+          <option value="graphicdesign">Graphic Design</option>
+          <option value="selfhelp">Self Help</option>
+          <option value="education">Education</option>
+        </select><br>
+      <label for="image">Image URL</label>
+        <input type="text" name='image'><br>
+      <label for="url">Course URL</label>
+        <input type="text" name='url'><br>
+      <label for="rating">Rating</label>
+        <select name='rating'>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select><br>
+      <label for="description">Description</label><br>
+        <textarea name="description" rows="8" cols="40"></textarea><br>
+        <input type="submit" value='Post Your Course!'>
+    </form>
+  </main>
+</body>
+</html>
