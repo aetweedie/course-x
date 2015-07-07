@@ -15,7 +15,7 @@
       <h2>The Home of Online Learning</h2>
     </header>
     <main>
-        <h3>Edit a Course!</h3>
+        <h3 class='title'>Edit a Course!</h3>
       <div class="container">
         <form action="/courses/{{_id}}/update" method='POST'>
           <label for="name">Name</label>
@@ -45,10 +45,10 @@
             </select><br>
           <label for="description">Description</label><br>
             <textarea name="description" rows="8" cols="40">{{description}}</textarea><br>
-          <input type="submit" value='Submit your edits'>
+          <input type="submit" class='button' value='Submit your edits'>
         </form>
           <form class="destroy" action="/courses/{{_id}}/delete" method="post">
-            <input type="submit" value="Delete This course">
+            <input type="submit" class='button' value="Delete This course">
           </form>
       </div>
     </main>

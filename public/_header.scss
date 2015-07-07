@@ -15,13 +15,15 @@ header {
   }
   nav {
     float:right;
-    background: white;
     text-align: center;
-    padding: 10px;
     margin: 20px;
 
     a {
       display: block;
+      background: white;
+      width: 300px;
+      border-radius: 5px;
+      padding: 10px;
       margin: 5px;
       text-decoration: none;
       color: $blue;

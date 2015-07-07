@@ -1,0 +1,21 @@
+.splashpage {
+  background-image: url(http://www.gc-solutions.net/blog/wp-content/uploads/2014/06/virtual-classroom2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+
+  a {
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    background-color: $orange;
+    padding: 20px 50px;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+}
