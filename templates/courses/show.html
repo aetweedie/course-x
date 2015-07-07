@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{name}}</title>
+</head>
+<body>
+  <header>
+    <h1>Course-X</h1>
+    <h2>The Home of Online Learning</h2>
+    <nav>
+      <a href="/courses">Home</a>
+      <a href="/courses/new">Post Your Course!</a>
+    </nav>
+  </header>
+  <main>
+    <section class='display'>
+      <h3>{{name}}</h3>
+      <img src="{{image}}" alt="{{name}} image">
+      <p class='category'>{{category}}</p>
+      <p class='description'>{{description}}</p>
+      <p class='rating'><strong>Rating: </strong>{{rating}}</p>
+      <a href="{{url}}" target="_blank">Visit This Course!</a>
+      <a href="courses/{{_id}}/edit">Admin? Edit this course!</a>
+    </section>
+  </main>
+</body>
+</html>

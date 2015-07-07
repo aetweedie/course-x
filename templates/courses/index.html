@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Course-X</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
   <header>
@@ -18,7 +20,7 @@
     <h3>All Courses</h3>
     {{#courses}}
       <div class="course">
-        <img src="{{image}}" alt="{{name}}">
+        <a href="/courses/{{_id}}"><img class='thumb' src="{{image}}" alt="{{name}}"></a>
         <h4>{{name}}</h4>
         <h5>{{author}}</h5>
         <h5>Rating: {{rating}}/5</h5>
